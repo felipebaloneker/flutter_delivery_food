@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_delivery_food/modules/home/home_page.dart';
 import 'package:flutter_delivery_food/modules/login/login_page.dart';
-import 'package:flutter_delivery_food/modules/splash/splash_page.dart';
 import 'package:flutter_delivery_food/shared/themes/app_colors.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitDown,
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(const MyApp());
 }
 
@@ -20,9 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         primaryColor: AppColors.primary,
       ),
-      initialRoute: '/splash',
+      initialRoute: '/login',
       routes: {
-        "/splash": (context) => SplashPage(),
         "/login": (context) => LoginPage(),
         "/home": (context) => HomePage(),
       },

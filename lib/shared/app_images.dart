@@ -5,4 +5,5 @@ class AppImages {
   static const burger01 = "assets/images/burger01.png";
   static const burger02 = "assets/images/burger02.png";
   static const chef = "assets/images/chef.png";
+  static const google = "assets/images/google.png";
 }
