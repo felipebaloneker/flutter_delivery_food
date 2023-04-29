@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_delivery_food/modules/home/home_page.dart';
 import 'package:flutter_delivery_food/modules/login/login_page.dart';
+import 'package:flutter_delivery_food/modules/splash/splash_page.dart';
 import 'package:flutter_delivery_food/shared/themes/app_colors.dart';
 
 void main() {
@@ -25,8 +26,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         primaryColor: AppColors.primary,
       ),
-      initialRoute: '/login',
+      initialRoute: '/splash',
       routes: {
+        "/splash": (context) => SplashPage(),
         "/login": (context) => LoginPage(),
         "/home": (context) => HomePage(),
       },

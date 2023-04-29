@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_delivery_food/modules/login/login_controller.dart';
 import 'package:flutter_delivery_food/shared/app_images.dart';
-import 'package:flutter_delivery_food/shared/auth/auth_controller.dart';
 import 'package:flutter_delivery_food/shared/themes/app_colors.dart';
 import 'package:flutter_delivery_food/shared/themes/app_text_styles.dart';
-import 'package:flutter_delivery_food/shared/widgets/social_login_button/social_login_button.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+import '../../shared/auth/auth_controller.dart';
 
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
+class SplashPage extends StatelessWidget {
+  const SplashPage({super.key});
 
-class _LoginPageState extends State<LoginPage> {
-  final controller = LoginController();
   @override
   Widget build(BuildContext context) {
+    final authController = AuthController();
+    authController.currentUser(context);
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
@@ -59,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Column(children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 9, vertical: 20),
+                            horizontal: 11, vertical: 10),
                         child: Text(
                           "We will make your stomach full and healthy",
                           style: AppTextStyles.titleHome,
@@ -67,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        padding: const EdgeInsets.symmetric(horizontal: 11),
                         child: Text(
                           "All the best restaurants with their top menu waiting for you, they can’t wait for your order!",
                           style: AppTextStyles.trailingHome,
@@ -75,11 +70,21 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 20),
-                          child: SocialLoginButton(onTap: () {
-                            controller.googleSignIn(context);
-                          }))
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 10),
+                        child: Container(
+                          width: 94,
+                          height: 94,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+                          ),
+                          child: Icon(
+                            Icons.arrow_forward,
+                            color: AppColors.primary,
+                          ),
+                        ),
+                      )
                     ]),
                   ),
                 ))

@@ -3,12 +3,12 @@ import 'package:flutter_delivery_food/shared/themes/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyles {
-  static final titleHome = GoogleFonts.lexendDeca(
+  static final titleHome = GoogleFonts.poppins(
     fontSize: 32,
     fontWeight: FontWeight.w600,
     color: AppColors.shape,
   );
-  static final trailingHome = GoogleFonts.lexendDeca(
+  static final trailingHome = GoogleFonts.poppins(
     fontSize: 14,
     fontWeight: FontWeight.w400,
     color: AppColors.shape,
@@ -18,39 +18,49 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final titleRegular = GoogleFonts.lexendDeca(
+  static final titleRegular = GoogleFonts.poppins(
     fontSize: 20,
     fontWeight: FontWeight.w400,
     color: AppColors.background,
   );
-  static final titleBoldHeading = GoogleFonts.lexendDeca(
+  static final titleBoldHeading = GoogleFonts.poppins(
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final titleBoldBackground = GoogleFonts.lexendDeca(
+  static final titleBoldBackground = GoogleFonts.poppins(
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.background,
   );
-  static final titleListTile = GoogleFonts.lexendDeca(
+  static final titleListTile = GoogleFonts.poppins(
     fontSize: 18,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final trailingListTile = GoogleFonts.lexendDeca(
+  static final trailingListTile = GoogleFonts.poppins(
     fontSize: 12,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
   );
-  static final trailingRegular = GoogleFonts.lexendDeca(
+  static final trailingRegular = GoogleFonts.poppins(
     fontSize: 16,
     fontWeight: FontWeight.w400,
     color: AppColors.heading,
   );
-  static final trailingBold = GoogleFonts.lexendDeca(
+  static final trailingBold = GoogleFonts.poppins(
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.heading,
+  );
+  static final buttonGray = GoogleFonts.poppins(
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    color: AppColors.grey,
+  );
+  static final buttonBoldGray = GoogleFonts.poppins(
+    fontSize: 15,
+    fontWeight: FontWeight.w700,
+    color: AppColors.grey,
   );
 }
