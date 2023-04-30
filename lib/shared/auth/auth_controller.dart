@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_delivery_food/shared/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import '../modules/user_module.dart';
 
 class AuthController {
   UserModel? _user;

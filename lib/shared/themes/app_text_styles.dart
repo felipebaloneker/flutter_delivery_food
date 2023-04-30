@@ -13,11 +13,7 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.shape,
   );
-  static final titleCategory = GoogleFonts.poppins(
-    fontSize: 27,
-    fontWeight: FontWeight.w600,
-    color: AppColors.heading,
-  );
+
   static final titleRegular = GoogleFonts.poppins(
     fontSize: 20,
     fontWeight: FontWeight.w400,
@@ -32,6 +28,16 @@ class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: AppColors.background,
+  );
+  static final titleCategory = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.text,
+  );
+  static final trailingCategory = GoogleFonts.poppins(
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    color: AppColors.primary,
   );
   static final titleListTile = GoogleFonts.poppins(
     fontSize: 18,
