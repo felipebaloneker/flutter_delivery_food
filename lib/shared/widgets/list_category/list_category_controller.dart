@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_delivery_food/shared/models/Category_model.dart';
+import 'package:flutter_delivery_food/shared/models/category_model.dart';
 
 class ListCategoryController {
   final category = ValueNotifier<List<CategoryModel>>(<CategoryModel>[

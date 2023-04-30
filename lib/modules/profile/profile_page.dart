@@ -35,7 +35,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 48,
                   width: 48,
                   decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.amber,
                       shape: BoxShape.circle,
                       image: DecorationImage(image: NetworkImage('')))),
             ),

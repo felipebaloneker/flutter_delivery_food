@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:flutter_delivery_food/shared/models/Category_model.dart';
+import 'package:flutter_delivery_food/shared/models/category_model.dart';
 import 'package:flutter_delivery_food/shared/widgets/category/category_widget.dart';
 import 'package:flutter_delivery_food/shared/widgets/list_category/list_category_controller.dart';
 

@@ -39,6 +39,16 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.primary,
   );
+  static final bodyCategory = GoogleFonts.dmSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: AppColors.shape,
+  );
+  static final bodyCategoryGrey = GoogleFonts.dmSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+    color: AppColors.text,
+  );
   static final titleListTile = GoogleFonts.poppins(
     fontSize: 18,
     fontWeight: FontWeight.w600,
